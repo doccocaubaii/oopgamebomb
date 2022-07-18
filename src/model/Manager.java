@@ -320,24 +320,24 @@ public class Manager {
 		g2d.setColor(Color.WHITE);
 		Image heart = new ImageIcon(getClass().getResource("/Images/heart_1.png")).getImage();
 		if (mBomber.getHeart() == 3) {
-			g2d.drawImage(heart, 860, 319, null);
-			g2d.drawImage(heart, 885, 319, null);
-			g2d.drawImage(heart, 910, 319, null);
+			g2d.drawImage(heart, 815, 295, null);
+			g2d.drawImage(heart, 840, 295, null);
+			g2d.drawImage(heart, 865, 295, null);
 		}
 		if (mBomber.getHeart() == 2) {
-			g2d.drawImage(heart, 860, 319, null);
-			g2d.drawImage(heart, 885, 319, null);
+			g2d.drawImage(heart, 815, 295, null);
+			g2d.drawImage(heart, 840, 295, null);
 		}
 		if (mBomber.getHeart() == 1) {
-			g2d.drawImage(heart, 860, 319, null);
+			g2d.drawImage(heart, 815, 295, null);
 		}
 		g2d.setFont(new Font("Arial", Font.BOLD, 30));
-		g2d.drawString("" + round, 870, 281);
+		g2d.drawString("" + round, 870, 277);
 		g2d.setFont(new Font("Arial", Font.BOLD, 18));
-		g2d.drawString("" + mBomber.getQuantityBomb(), 842, 357);
-		g2d.drawString("" + mBomber.getSizeBomb(), 857, 377);
-		g2d.drawString("" + (10 - mBomber.getSpeed()), 842, 396);
-		g2d.drawString("" + mBomber.getScore(), 820, 416);
+		g2d.drawString("" + mBomber.getQuantityBomb(), 850, 337);
+		g2d.drawString("" + mBomber.getSizeBomb(), 850, 357);
+		g2d.drawString("" + (10 - mBomber.getSpeed()), 850, 376);
+		g2d.drawString("" + mBomber.getScore(), 850, 396);
 	}
 
 	public void drawTimer(Graphics2D g2d) {
